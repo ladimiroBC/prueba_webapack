@@ -24,9 +24,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _static_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./static/style.css */ \"./src/static/style.css\");\n\n// import CodeImageUrl from './assets/images/logo2.png';\n// const App = () => {\n//     const Container = document.createElement('div');\n//     const CodeImage = document.createElement('img');\n//     Container.appendChild(CodeImage);\n//     CodeImage.src = CodeImageUrl;\n//     return Container;\n// };\n// document.body.appendChild(App());\nconsole.log(\"Hello desde webpack :)...\");\nconsole.log(\"hello again\");\n\n\n//# sourceURL=webpack://proyecto_webpack/./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst rutaimagen_1 = __webpack_require__(/*! ./rutaimagen */ \"./src/rutaimagen.ts\");\n__webpack_require__(/*! ./static/style.css */ \"./src/static/style.css\");\n//import imageUrl from '../src/assets/images/logo2.png';\nconst App = () => {\n    const image = rutaimagen_1.rutaImagen;\n    const Container = document.createElement('div');\n    const CodeImage = document.createElement('img');\n    Container.appendChild(CodeImage);\n    CodeImage.src = image;\n    return Container;\n};\ndocument.body.appendChild(App());\nconsole.log(\"Hello desde webpack :)...\");\nconsole.log(\"hello again\");\n\n\n//# sourceURL=webpack://proyecto_webpack/./src/index.ts?");
+
+/***/ }),
+
+/***/ "./src/rutaimagen.ts":
+/*!***************************!*\
+  !*** ./src/rutaimagen.ts ***!
+  \***************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.rutaImagen = void 0;\nexports.rutaImagen = '../src/assets/images/logo2.png';\n\n\n//# sourceURL=webpack://proyecto_webpack/./src/rutaimagen.ts?");
 
 /***/ })
 

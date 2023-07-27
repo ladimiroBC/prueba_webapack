@@ -10,7 +10,6 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename:'images'
   },
   resolve: {
     extensions: ['.ts', '.js'],
@@ -30,13 +29,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.png$/,
-        //test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         loader: 'file-loader',
         type:'asset/resource',
         options: {
-          name: '[name].[ext]',
-          outputPath: 'assets'
+          publicPath: 'assets',
+          name: '[path][name].[ext]',
+          outputPath: 'images'
         }
       }
     ],

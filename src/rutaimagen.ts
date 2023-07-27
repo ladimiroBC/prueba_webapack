@@ -1,0 +1,1 @@
+export const rutaImagen = '../src/assets/images/logo2.png';
