@@ -1,0 +1,26 @@
+{
+    "ts-node": {
+      "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+      "target": "es6",
+      "module": "CommonJS",
+      "outDir": "dist",
+      "rootDir": "src",
+      "strict": true,
+      "sourceMap": true,
+      "moduleResolution": "node",
+      // "baseUrl": ".",
+      // "paths": {
+      //   "@assets/*":["src/assets/*"],
+      //   "*":["node_modules/*"]
+      // }
+    },
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+}
+  
